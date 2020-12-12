@@ -60,7 +60,7 @@
 				422EB614258506FD005B0823 /* Model */,
 				422EB61525850704005B0823 /* View */,
 				422EB61625850709005B0823 /* Controller */,
-				422EB6062585065B005B0823 /* Assets.xcassets */,
+				422EB62E25855D58005B0823 /* Resources */,
 				422EB60B2585065B005B0823 /* Info.plist */,
 			);
 			path = Yr;
@@ -97,6 +97,14 @@
 				422EB60125850659005B0823 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		422EB62E25855D58005B0823 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				422EB6062585065B005B0823 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
