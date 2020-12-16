@@ -1,7 +1,6 @@
 {
   "images" : [
     {
-      "filename" : "lightssnowshowersandthunder_day.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -10,6 +9,7 @@
       "scale" : "2x"
     },
     {
+      "filename" : "lightssnowshowersandthunder_day.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

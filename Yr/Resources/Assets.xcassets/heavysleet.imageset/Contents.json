@@ -1,12 +1,10 @@
 {
   "images" : [
     {
-      "filename" : "heavysleet.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "heavysleet-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

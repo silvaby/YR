@@ -1,12 +1,10 @@
 {
   "images" : [
     {
-      "filename" : "heavysleetshowersandthunder_night.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "heavysleetshowersandthunder_night-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

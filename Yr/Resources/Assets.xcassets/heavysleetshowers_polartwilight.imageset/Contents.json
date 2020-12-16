@@ -1,12 +1,10 @@
 {
   "images" : [
     {
-      "filename" : "heavysleetshowers_polartwilight.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "heavysleetshowers_polartwilight-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

@@ -1,12 +1,10 @@
 {
   "images" : [
     {
-      "filename" : "fair_night.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "fair_night-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
