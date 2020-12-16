@@ -13,6 +13,7 @@
 		422EB6072585065B005B0823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422EB6062585065B005B0823 /* Assets.xcassets */; };
 		422EB60A2585065B005B0823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422EB6082585065B005B0823 /* LaunchScreen.storyboard */; };
 		42C22659258AA082004C0224 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C22658258AA082004C0224 /* NetworkError.swift */; };
+		42C2265C258AA0D4004C0224 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C2265B258AA0D4004C0224 /* NetworkService.swift */; };
 		42DFF0AB25855EB2009286A3 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFF0AA25855EB2009286A3 /* Weather.swift */; };
 		42DFF0AE258560C8009286A3 /* SymbolCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFF0AD258560C8009286A3 /* SymbolCode.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		422EB6092585065B005B0823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		422EB60B2585065B005B0823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42C22658258AA082004C0224 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		42C2265B258AA0D4004C0224 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		42DFF0AA25855EB2009286A3 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		42DFF0AD258560C8009286A3 /* SymbolCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				42C22658258AA082004C0224 /* NetworkError.swift */,
+				42C2265B258AA0D4004C0224 /* NetworkService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				42C22659258AA082004C0224 /* NetworkError.swift in Sources */,
 				42DFF0AE258560C8009286A3 /* SymbolCode.swift in Sources */,
 				422EB60025850659005B0823 /* SceneDelegate.swift in Sources */,
+				42C2265C258AA0D4004C0224 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
