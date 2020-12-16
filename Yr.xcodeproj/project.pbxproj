@@ -12,6 +12,7 @@
 		422EB60225850659005B0823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422EB60125850659005B0823 /* ViewController.swift */; };
 		422EB6072585065B005B0823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422EB6062585065B005B0823 /* Assets.xcassets */; };
 		422EB60A2585065B005B0823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422EB6082585065B005B0823 /* LaunchScreen.storyboard */; };
+		42C22659258AA082004C0224 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C22658258AA082004C0224 /* NetworkError.swift */; };
 		42DFF0AB25855EB2009286A3 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFF0AA25855EB2009286A3 /* Weather.swift */; };
 		42DFF0AE258560C8009286A3 /* SymbolCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFF0AD258560C8009286A3 /* SymbolCode.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		422EB6062585065B005B0823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		422EB6092585065B005B0823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		422EB60B2585065B005B0823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42C22658258AA082004C0224 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		42DFF0AA25855EB2009286A3 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		42DFF0AD258560C8009286A3 /* SymbolCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				422EB613258506F2005B0823 /* Application */,
+				42C22657258AA05F004C0224 /* Network */,
 				422EB614258506FD005B0823 /* Model */,
 				422EB61525850704005B0823 /* View */,
 				422EB61625850709005B0823 /* Controller */,
@@ -108,6 +111,14 @@
 				422EB6062585065B005B0823 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		42C22657258AA05F004C0224 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				42C22658258AA082004C0224 /* NetworkError.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 				42DFF0AB25855EB2009286A3 /* Weather.swift in Sources */,
 				422EB60225850659005B0823 /* ViewController.swift in Sources */,
 				422EB5FE25850659005B0823 /* AppDelegate.swift in Sources */,
+				42C22659258AA082004C0224 /* NetworkError.swift in Sources */,
 				42DFF0AE258560C8009286A3 /* SymbolCode.swift in Sources */,
 				422EB60025850659005B0823 /* SceneDelegate.swift in Sources */,
 			);
