@@ -18,13 +18,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
-        airTemperatureLabel = UILabel(frame: CGRect(x: 100, y: 100, width: 200.00, height: 40.00))
+        airTemperatureLabel = UILabel(frame: CGRect(x: 100, y: 100, width: 200.00, height: 60.00))
         if let airTemperatureLabel = airTemperatureLabel {
             view.addSubview(airTemperatureLabel)
             airTemperatureLabel.text = "--"
+            airTemperatureLabel.font = UIFont.systemFont(ofSize: 80)
+            airTemperatureLabel.textColor = .white
             airTemperatureLabel.textAlignment = .center
         }
-        requestWeatherForLocation()
     }
 
     override func viewWillAppear(_: Bool) {
@@ -36,11 +37,12 @@ class ViewController: UIViewController {
         dataSource = WeatherDataSource { [weak self] data in
             self?.weather = data
 
-            if let airTemperature = self?.weather.first?.properties.timeseries.first?.data.instant.details.airTemperature {
-                self?.airTemperature = String(airTemperature)
+            if let airTemperature = (self?.weather.first?.properties.timeseries.first?.data.instant.details.airTemperature) {
+                print(airTemperature)
+                self?.airTemperature = String(Int(round(airTemperature)))
             }
             DispatchQueue.main.async {
-                self?.airTemperatureLabel?.text = "\(self!.airTemperature) \u{2103}"
+                self?.airTemperatureLabel?.text = "\(self!.airTemperature)\u{00B0}"
             }
         }
     }

@@ -18,7 +18,6 @@ class NetworkService {
      */
     public func weatherRequest(lat: Double, lon: Double, completion: @escaping (Result<Data, NetworkError>) -> Void) {
         let urlString = "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=\(lat)&lon=\(lon)"
-        print(urlString)
         guard let urlRequest = urlRequest(url: urlString) else {
             completion(.failure(.invalidURLRequest))
             return
