@@ -35,7 +35,6 @@ class ViewController: UIViewController {
     }
 
     func requestWeatherForLocation() {
-        print(" 1 ---")
         guard let storedWeather = settings.getDataFromUserDefaults() else {
             return
         }
@@ -46,7 +45,6 @@ class ViewController: UIViewController {
             self?.weather = data
 
             if let airTemperature = (self?.weather.first?.properties.timeseries.first?.data.instant.details.airTemperature) {
-                print(airTemperature)
                 self?.airTemperature = String(Int(round(airTemperature)))
             }
             DispatchQueue.main.async {
