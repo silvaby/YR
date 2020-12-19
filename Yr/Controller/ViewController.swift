@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     private var airTemperatureLabel: UILabel?
     private var dataSource: WeatherDataSource?
     private var weather = [Weather]()
+    private let settings = Settings()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,14 @@ class ViewController: UIViewController {
     }
 
     func requestWeatherForLocation() {
+        print(" 1 ---")
+        guard let storedWeather = settings.getDataFromUserDefaults() else {
+            return
+        }
+        weather = storedWeather
+
         dataSource = WeatherDataSource { [weak self] data in
+            self?.settings.saveToUserDefaults(data: data)
             self?.weather = data
 
             if let airTemperature = (self?.weather.first?.properties.timeseries.first?.data.instant.details.airTemperature) {
